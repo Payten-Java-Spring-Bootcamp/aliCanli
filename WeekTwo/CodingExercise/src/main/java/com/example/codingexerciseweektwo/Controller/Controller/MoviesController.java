@@ -61,7 +61,7 @@ public class MoviesController {
     @ApiOperation(value = "The method deleting depends on moviesID")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void deleteMovies(@PathVariable Integer moviesId){
-        mainInit.getMoviesList().removeIf(vehicle -> vehicle.getMoviesId().equals(moviesId));
+        mainInit.getMoviesList().removeIf(movies -> movies.getMoviesId().equals(moviesId));
     }
 
 }
