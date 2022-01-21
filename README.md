@@ -1,5 +1,7 @@
 # Spring Bootcamp Homeworks
 
+
+
 > ## Week One ->
 
 ```
@@ -24,4 +26,25 @@
 * REST Architecture
 * Developing RESTful services with Spring Boot
 * Clean Code Book; Meaningful Names, Functions, Comments
+```
+
+> ## Week Three -> 
+
+```
+* Sql ve Postgresql
+* ORM Tools
+* Spring Data
+* @Transactional
+* Layered Architecture
+```
+
+> ## Week Four ->
+
+```
+* Testing software
+* Test Pyramid
+* Unit Test
+* Integration Test
+* Test Doubles
+* Clean Code Test Section
 ```
