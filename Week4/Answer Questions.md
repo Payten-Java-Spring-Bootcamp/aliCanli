@@ -1,6 +1,38 @@
 
 # • https://martinfowler.com/articles/practical-test-pyramid.html adresindeki yazıyı okuyup özetini çıkarınız.
 
+
+> The Test Pyramid
+
+Yazar burada, yazılımımız için otomatik testler konusunda ciddi olmak istiyorsak, bilmemiz gereken önemli bir kavram olan test piramidinden bahsetmiştir. Bu piramdin çıkış noktasının Mike Cohn, "Succeeding with Agile" kitabı olduğu anlatılmaktadır.Bu kitap farklı test katmanları hakkında düşünmenizi söyleyen harika bir görsel metafor. Ayrıca, her katmanda ne kadar test yapılacağını da söyler.
+
+![Regression Image](https://martinfowler.com/articles/practical-test-pyramid/testPyramid.png)
+
+Fakat bu yaklaşımında aslında tam olarak yetmeyeceğinden bahsedilmektedir. Modern bir bakış açısından, test piramidi aşırı derecede basit görünüyor ve bu nedenle yanıltıcı olabilir.
+
+> The Sample Application
+
+* Functionality
+
+Uygulamanın işlevselliği basittir. Üç endpoint ile bir REST arayüzü sağlar,
+
+
+GET /hello	Her zaman "Hello World" döndürür.
+GET /hello/{lastname}	Kişiye özel soyadına göre bir mesaj döndürür "Hello {Firstname} {Lastname}".
+GET /weather	burada ise bölgeye göre bir hava durumu döndürüldüğünü gösterir. Hamburg, Germany.
+
+> Unit tests
+
+Test paketimizin temeli birim testlerden oluşacaktır. Birim testlerimiz kod tabanınızın belirli bir biriminin (test edilen konunuz) amaçlandığı şekilde çalıştığından emin olmaya yarar. Birim testleri, test paketimizdeki tüm testlerin en dar kapsamına sahiptir. Test paketinizdeki birim testlerinin sayısı, diğer test türlerinden büyük ölçüde daha fazla olacaktır.
+
+> Integration Tests
+
+Önemsiz olmayan tüm uygulamalar diğer bazı bölümlerle (veritabanları, dosya sistemleri, diğer uygulamalara yapılan ağ çağrıları) bütünleşir. Birim testleri yazarken, bunlar genellikle daha iyi izolasyon ve daha hızlı testler yapmak için dışarıda bıraktığınız parçalardır. Yine de uygulamanız diğer bölümlerle etkileşime girecek ve bunun test edilmesi gerekiyor. Entegrasyon Testleri yardımcı olmak için var. Uygulamanızın entegrasyonunu, uygulamanızın dışında yaşayan tüm parçalarla sınarlar.
+
+
+
+
+
 # • Regression test nedir ? Kısaca açıklayınız.
 
 *Yazılımda herhangi ufak bir değişiklik ya da yeni bir fonksiyon birçok beklenmedik sonuç doğurabilir. Regresyon testinin amacı, bu değişiklikler sonrası yazılımın hala doğru şekilde çalıştığını kontrol etmektir.*
