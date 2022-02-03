@@ -48,3 +48,27 @@
 * Test Doubles
 * Clean Code Test Section
 ```
+
+
+> ## Week Five ->
+
+```
+* NoSQL
+* Redis
+* MongoDB
+* CAP Theorem
+* Polygot Persistence
+* Hexagonal Architecture
+```
+
+> ## Week Six ->
+
+```
+* Exceptions In Java
+* Tips For Using Exceptions
+* Effective Java - > About Exceptions - 1
+* Clean Code - > Chapter 7
+* Using Optional as a Better Alternative To Null 
+* JWT 
+* Spring Security
+```
